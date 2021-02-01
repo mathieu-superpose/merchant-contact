@@ -7,14 +7,12 @@ const Client = ({ data }) => {
   console.log(image);
 
   return (
-    <li>
-      Firstname:{firstName}<br />
-      Lastname: {lastName}<br />
+    <li class='card'>
       <img src={image} alt="profile pic"/><br />
-      Job: {job}<br />
-      Email: {email}<br />
-      Telephone: +{telephone}<br />
-      
+      {firstName} {lastName}<br />
+      {job}<br />
+      <a href="tel:{telephone}"><button type="button">Call</button></a>
+      <a href="email:{email}"><button type="button">Send Email</button></a>
     </li>
   );
 };
