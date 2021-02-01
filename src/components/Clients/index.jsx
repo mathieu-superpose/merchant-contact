@@ -3,10 +3,14 @@ import faker from 'faker';
 import Client from 'components/Client';
 
 const Clients = () => {
-  const clientList = Array.from({ length: 100 }, () => ({
+  const clientList = Array.from({ length: 10 }, () => ({
     id: faker.random.uuid(),
     firstName: faker.name.firstName(),
     lastName: faker.name.lastName(),
+    company: faker.company.companyName(),
+    telephone: faker.phone.phoneNumberFormat(),
+    image: faker.image.people(100,150,true),
+    job: faker.name.jobTitle(),
   }));
 
   return (
