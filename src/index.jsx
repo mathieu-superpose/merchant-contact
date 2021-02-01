@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Clients from './components/Clients';
+import Clients from 'components/Clients';
+import Client from 'components/Client';
 
 const App = () => (
   <div>

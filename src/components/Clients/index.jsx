@@ -1,16 +1,20 @@
 import React from 'react';
 import faker from 'faker';
+import Client from 'components/Client';
 
 const Clients = () => {
-  const clientsList = Array.from({ length: 100 }, () => ({
+  const clientList = Array.from({ length: 100 }, () => ({
+    id: faker.random.uuid(),
     firstName: faker.name.firstName(),
     lastName: faker.name.lastName(),
   }));
 
-  console.log(clientsList);
-
   return (
-    <p>{clientsList[0].firstName}</p>
+    <ul>
+      {clientList.map((clientData) => (
+        <Client data={clientData} key={clientData.id} />
+      ))}
+    </ul>
   );
 };
 
