@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Clients from 'components/Clients';
 import Client from 'components/Client';
+import Colors from 'components/Colors';
 
 const App = () => (
   <div>
-    <h1>Hello world!</h1>
-    <Clients />
+    <Colors />
   </div>
 );
 

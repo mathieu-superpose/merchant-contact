@@ -7,7 +7,7 @@ const Client = ({ data }) => {
   console.log(image);
 
   return (
-    <li class='card'>
+    <li className='card'>
       <img src={image} alt="profile pic"/><br />
       {firstName} {lastName}<br />
       {job}<br />

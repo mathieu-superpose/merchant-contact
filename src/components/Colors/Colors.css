@@ -1,0 +1,27 @@
+.square-bloc {
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.square-container {
+	display: flex;
+}
+.square {
+	width: 200px;
+	height: 200px;
+	border: solid;
+	border-radius: 50% 10% 50% 10%;
+}
+.blue {
+	background: blue;
+}
+.red {
+	background: red;
+}
+.yellow {
+	background: yellow;
+}
+.green {
+	background: green;
+}
